@@ -42,4 +42,33 @@ ul {
     color: white;
 }
 
+.vertical{
+    position: absolute;
+    bottom: 10%;
+    right:10px;
+    writing-mode: vertical-lr;
+    color: white;
+    animation: scroll 2s infinite;
+}
+
+#arrow{
+    position: absolute;
+    bottom: 2%;
+    right: 35px;
+    color: white;
+}
+
+@keyframes scroll {
+    0%{
+        bottom: 10%;
+    }
+    50%{
+        bottom:5%;
+    }
+    100%{
+        bottom: 10%;
+    }
+}
+
+
 
