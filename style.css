@@ -36,17 +36,26 @@ ul {
 /* content */
 #content{
     position: absolute;
-    top: 10%;
+    top: 1%;
     left: 250px;
     color: white;
+    
 
 }
 #content h1{
     font-family: 'Recursive', sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+}
+#letter{
+    text-shadow: -8px 0 0 rgb(103, 221, 242);
+    color:rgb(255, 80, 30); 
+    cursor: pointer;
 }
 
 .tags{
     font-family: 'Caveat', cursive;
+    color:rgb(171, 169, 169);
 }
 
 /* scroll down.. */
