@@ -6,28 +6,6 @@ canvas{
     z-index: -5;
 }
 
-/* navbar */
-nav{
-    position: absolute;
-    top:0%;
-    height: 100vh;
-    background-color: #f1f1f1;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    
-  }
-  
-  li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-  
   /* Change the link color on hover */
   li a:hover {
     background-color: #555;
@@ -39,12 +17,10 @@ ul {
     top: 1%;
     left: 250px;
     color: white;
-    
-
 }
 #content h1{
     font-family: 'Recursive', sans-serif;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 600;
 }
 #letter{
@@ -53,11 +29,61 @@ ul {
     cursor: pointer;
 }
 
+/* typewriter animation */
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .01em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(30,end);
+    animation-fill-mode: forwards;
+  }
+  .t1{
+    animation-delay: 1s;
+  }
+  .t2{
+    animation-delay: 4s;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from { width:0 }
+    to { width:100% }
+  }
+  
+  /* The tags */
 .tags{
     font-family: 'Caveat', cursive;
     color:rgb(171, 169, 169);
 }
 
+#content h3{
+    color: lightgray;
+}
+
+/* button */
+.button {
+    background-color: rgb(103, 221, 242);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color: transparent; 
+    color: rgb(103, 221, 242);
+    border: 2px solid rgb(103, 221, 242);
+  }
+  
+  .button1:hover {
+    background-color: rgb(103, 221, 242);;
+    color: black;
+  }
 /* scroll down.. */
 .vertical{
     position: absolute;

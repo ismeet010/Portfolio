@@ -6,36 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Recursive&display=swap" rel="stylesheet">
 
-
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styled.css" />
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="scripted.js"></script>
     <script src="script.js"></script> 
 </head>
 <body>
     <div id="particles">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-              </ul>
-        </nav>
+        <div class="side-bar">
+            <div class="logo-name-wrapper">
+                  <div class="logo-name">
+                    <span class="logo-name__name">Lincoln Botosh</span>
+                  </div>
+                  <button class="logo-name__button">
+                    <i
+                      class="bx bx-arrow-from-right logo-name__icon"
+                      id="logo-name__icon"
+                    ></i>
+                  </button>
+                </div>
+                <div class="message">
+                  <i class="message-icon bx bx-message-square-edit"></i>
+                  <span class="message-text">New Mesage</span>
+                  <span class="tooltip">New Mesage</span>
+                </div>
+                <ul class="features-list">
+                  <li class="features-item inbox active">
+                    <i class="bx bxs-inbox features-item-icon inbox-icon"
+                      ><span class="status"></span
+                    ></i>
+                    <span class="features-item-text">Inbox</span>
+                    <span class="inbox-number">99</span>
+                    <span class="tooltip">Inbox</span>
+                  </li>
+                  <li class="features-item draft">
+                    <i class="bx bx-file-blank features-item-icon"></i>
+                    <span class="features-item-text">Draft</span>
+                    <span class="tooltip">Draft</span>
+                  </li>
+                  <li class="features-item star">
+                    <i class="bx bx-star features-item-icon"></i>
+                    <span class="features-item-text">Starred</span>
+                    <span class="tooltip">Starred</span>
+                  </li>
+                  <li class="features-item sent">
+                    <i class="bx bx-send features-item-icon"></i>
+                    <span class="features-item-text">Sent</span>
+                    <span class="tooltip">Sent</span>
+                  </li>
+                  <li class="features-item trash">
+                    <i class="bx bx-trash features-item-icon"></i>
+                    <span class="features-item-text">Trash</span>
+                    <span class="tooltip">Trash</span>
+                  </li>
+                  <li class="features-item spam">
+                    <i class="bx bx-message-square-error features-item-icon"></i>
+                    <span class="features-item-text">Spam</span>
+                    <span class="tooltip">Spam</span>
+                  </li>
+                </ul>
+              </div>
+              <script type="text/javascript">
+                {
+                  let sideBar = document.querySelector('.side-bar');
+                  let arrowCollapse = document.querySelector('#logo-name__icon');
+                  sideBar.onclick = () => {
+                    sideBar.classList.toggle('collapse');
+                    arrowCollapse.classList.toggle('collapse');
+                    if (arrowCollapse.classList.contains('collapse')) {
+                      arrowCollapse.classList =
+                        'bx bx-arrow-from-left logo-name__icon collapse';
+                    } else {
+                      arrowCollapse.classList = 'bx bx-arrow-from-right logo-name__icon';
+                    }
+                  };
+                }
+              </script>
         <div id="content">
             <span class="tags">&lt;html&gt;</span><br>
-            &emsp;	<span class="tags">&lt;body&gt;</span> <br><br><br>
-            &emsp;	 &emsp;	<span class="tags">&lt;h1&gt;</span> 
-            <h1> &thinsp;  &thinsp;Hi</h1>
-            <h1>&thinsp;   &thinsp;I'm <span id="letter">I</span>smeet</h1>
-            <h1>&thinsp;  &thinsp;Web Developer</h1> <span class="tags">&lt;/h1&gt;</span>
-            <span class="tags">&lt;p&gt;</span>
-            <p>Front-End Developer</p><span class="tags">&lt;/p&gt;</span>
+            &ensp;<span class="tags">&lt;body&gt;</span> <br><br><br>
+            &emsp;<span class="tags">&lt;h1&gt;</span> 
+            <span><h1 class="typewriter">&nbsp;Hi,</h1>
+            <h1 class="typewriter t1">&nbsp;I'm <span id="letter">I</span>smeet</h1>
+            <h1 class="typewriter t2">&nbsp;Web Developer</h1></span> &emsp;
+            <span class="tags">&lt;/h1&gt;</span>
+            &emsp;&emsp;<span class="tags">&lt;p&gt;</span>
+            &emsp;&emsp;<h3>Front-End Developer</h3>
+            <span class="tags">&lt;/p&gt;</span><br>
+            <button class="button button1">Contact me!</button>
         </div>
         <div>
             <p class="vertical">Scroll down</p>
