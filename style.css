@@ -1,6 +1,6 @@
 *{
-    background-color: #1d2322;
     font-family: 'Recursive', sans-serif;
+    background-color: #1d2322;
 }
 canvas{
     height:100vh;
@@ -20,6 +20,7 @@ canvas{
     top: 1%;
     left: 250px;
     color: white;
+    background: transparent;
 }
 #content h1{
     font-family: 'Recursive', sans-serif;
@@ -127,9 +128,10 @@ canvas{
 
 /* scroll down.. */
 .vertical{
+    font-size: 20px;
     position: absolute;
     bottom: 10%;
-    right:10px;
+    right: 30px;
     writing-mode: vertical-lr;
     color: white;
     animation: scroll 2s infinite;
@@ -137,20 +139,20 @@ canvas{
 
 #arrow{
     position: absolute;
-    bottom: 2%;
+    bottom: 1.5%;
     right: 37px;
     color: white;
 }
 
 @keyframes scroll {
     0%{
-        bottom: 8%;
+        bottom: 10%;
     }
     50%{
-        bottom:5%;
+        bottom: 6%;
     }
     100%{
-        bottom: 8%;
+        bottom: 10%;
     }
 }
 
@@ -158,6 +160,8 @@ canvas{
     position: absolute;
     left: 300px;
     color: white;
+    height:100vh;
+    width: 100vw;
 }
 
 h2{
@@ -167,7 +171,7 @@ h2{
    font-weight:600; 
 }
 p{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* Form */
@@ -208,4 +212,13 @@ input, select {
     font-size: 16px;
     color: #ccc;
   }
+  .row{
+      width:48%;
+      display: inline-block;
+  }
+  input[type=email]{
+      margin-left: 40px;
+  }
+ 
+  
 

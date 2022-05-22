@@ -400,3 +400,8 @@ body {
 .side-bar.collapse .chat-item-avatar-wrapper::before {
   opacity: 1;
 }
+
+hr{
+  color: red;
+  background-color: pink;
+}
