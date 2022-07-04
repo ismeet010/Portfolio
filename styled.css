@@ -28,7 +28,7 @@ body {
 .container { margin: 150px auto; max-width: 960px; color: #000; }
 
 .side-bar {
-  width: 23.2rem;
+  width: 15rem;
   height: 100%;
   padding: 2.1rem 1.2rem;
   background-color: #17171e;
@@ -141,6 +141,38 @@ body {
   opacity: 1;
 }
 
+.icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0.9rem;
+  margin-bottom: 1.1rem;
+  color: var(--grey-color);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.icon::before {
+  transition: 0.5s ease;
+  content: '';
+  position: absolute;
+  left: -1.2rem;
+  height: 100%;
+  border-left: 3px solid var(--white-color);
+  border-radius: 2px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon:hover {
+  color: var(--white-color);
+  transition: 0.5s ease;
+}
+
+.icon:hover::before {
+  opacity: 1;
+  visibility: unset;
+}
+
 .inbox-number {
   position: absolute;
   top: 50%;
@@ -170,6 +202,8 @@ body {
   opacity: 0;
   transition: 0.6s linear;
 }
+
+
 
 .category-list {
   padding-top: 2.1rem;

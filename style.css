@@ -22,6 +22,7 @@ canvas{
     left: 250px;
     color: white;
     background-color: transparent;
+    width:auto;
 }
 #content h1{
     font-family: 'Recursive', sans-serif;
@@ -129,10 +130,10 @@ canvas{
 
 /* scroll down.. */
 .vertical{
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     bottom: 10%;
-    right: 30px;
+    right: 25px;
     writing-mode: vertical-lr;
     color: white;
     animation: scroll 2s infinite;
@@ -140,10 +141,12 @@ canvas{
 
 #arrow{
     position: absolute;
-    bottom: 1.5%;
-    right: 37px;
+    bottom: 1.7%;
+    right: 27px;
     color: white;
+    size: 10px;
 }
+
 
 @keyframes scroll {
     0%{
@@ -157,13 +160,36 @@ canvas{
     }
 }
 
+/*skills...............*/
+#skills{
+    position: absolute;
+    top: 110%;
+    left: 250px;
+    color: white;
+    background-color: transparent;
+    width:auto;
+}
+
+#skills #leftalign{
+    width:50%;
+}
+/*.....Projects................ */
+#projects{
+    position: absolute;
+    top: 210%;
+    left: 250px;
+    color: white;
+    background-color: transparent;
+    width:auto;
+}
+/*............Contact...............*/
 #contact{
     position: absolute;
     left: 300px;
     color: white;
     height:100vh;
-    width: 100vw;
-    top:120%;
+    width: auto;
+    top:320%;
 }
 
 h2{
