@@ -46,23 +46,22 @@
             <br>
             <ul class="features-list">
               <li class="features-item inbox active">
-                <i class="bx bxs-inbox features-item-icon inbox-icon">
+                <a href="#content"><i class="bx bxs-inbox features-item-icon inbox-icon">
                   <span class="status"></span>
                 </i>
-                <span class="features-item-text">About</span>
-                <span class="tooltip">Inbox</span>
+                <span class="features-item-text">About</span></a>
               </li><hr>
               <li class="features-item draft">
-                <i class="bx bx-file-blank features-item-icon"></i>
-                <span class="features-item-text">Skills</span>
+                <a href="#skills"><i class="bx bx-file-blank features-item-icon"></i>
+                <span class="features-item-text">Skills</span></a>
               </li><hr>
               <li class="features-item star">
-                <i class="bx bx-star features-item-icon"></i>
-                <span class="features-item-text">Projects</span>
+                <a href="#projects"><i class="bx bx-star features-item-icon"></i>
+                <span class="features-item-text">Projects</span></a>
               </li><hr>
               <li class="features-item sent">
-                <i class="bx bx-send features-item-icon"></i>
-                <span class="features-item-text">Contact</span>
+                <a href="#contact"><i class="bx bx-send features-item-icon"></i>
+                <span class="features-item-text">Contact</span></a>
               </li><hr>
               <li class="features-item trash">
                 <i class="bx bx-trash features-item-icon"></i>
@@ -81,23 +80,23 @@
               </li>
             </ul>
         </div>
-        <div id="content">
-            <span class="tags">&lt;html&gt;</span><br>
-            &ensp;<span class="tags">&lt;body&gt;</span> <br><br><br><br><br>
-            &emsp;<span class="tags">&lt;h1&gt;</span><br> 
-            <span><h1 class="typewriter">&nbsp;Hi,</h1>
-            <h1 class="typewriter t1">&nbsp;I'm <span id="letter">I</span>smeet</h1>
-            <h1 class="typewriter t2">&nbsp;Web Developer</h1></span> &emsp;
-            <span class="tags">&lt;/h1&gt;</span><br><br>
-            &emsp;&emsp;<span class="tags">&lt;p&gt;</span>
-            &emsp;&emsp;<h3>&nbsp;&nbsp;&nbsp;Front-End Developer</h3>
-            &emsp;&emsp;<span class="tags">&lt;/p&gt;</span><br><br><br>
-            <div class="btn from-left">Contact me!</div>
-        </div>
-        <div id="scroller">
-            <p class="vertical">Scroll down</p>
-            <p id="arrow"> &darr;</p>
-        </div>
+    </div>
+    <div id="content">
+      <span class="tags">&lt;html&gt;</span><br>
+        &ensp;<span class="tags">&lt;body&gt;</span> <br><br><br><br><br>
+        &emsp;<span class="tags">&lt;h1&gt;</span><br> 
+        <span><h1 class="typewriter">&nbsp;Hi,</h1>
+        <h1 class="typewriter t1">&nbsp;I'm <span id="letter">I</span>smeet</h1>
+        <h1 class="typewriter t2">&nbsp;Web Developer</h1></span> &emsp;
+        <span class="tags">&lt;/h1&gt;</span><br><br>
+        &emsp;&emsp;<span class="tags">&lt;p&gt;</span>
+        &emsp;&emsp;<h3>&nbsp;&nbsp;&nbsp;Front-End Developer</h3>
+        &emsp;&emsp;<span class="tags">&lt;/p&gt;</span><br><br><br>
+      <div class="btn from-left">Contact me!</div>
+    </div> 
+    <div>
+      <p class="vertical">Scroll down</p>
+      <p id="arrow"> &darr;</p>
     </div>
     <div id="skills">
       <br><br><br>
@@ -110,7 +109,7 @@
         <br>&emsp;&emsp;<span class="tags">&lt;/p&gt;</span><br><br><br>
         <span class="tags">&lt;form&gt;</span><br><br>
         <span class="tags">&lt;/form&gt;</span><br></div>
-      
+        <div id="rightalign"></div>
     </div>
     <div id="projects">
       <br><br><br>
@@ -119,10 +118,6 @@
       <span class="tags">&lt;p&gt;</span><br>
       <span class="tags">&lt;/p&gt;</span><br><br><br>
 
-    </div> 
-    <div id="scroller2">
-      <p class="vertical">Scroll down</p>
-      <p id="arrow"> &darr;</p>
     </div>
     <div id="contact">
         <br><br><br>
@@ -133,8 +128,7 @@
         <br>&emsp;&emsp;<span class="tags">&lt;/p&gt;</span><br><br><br>
         <span class="tags">&lt;form&gt;</span><br><br>
         <form action="">
-            <input type="text" id="name" class="row" name="name" placeholder="Name">
-            <input type="email" id="email" class="row" name="email" placeholder="Email"><br>
+            <input type="text" id="name" class="row" name="name" placeholder="Name"><input type="email" id="email" class="row" name="email" placeholder="Email"><br>
             <input type="text" id="sub" name="sub" placeholder="Subject">
             <textarea placeholder="Message"></textarea>
             <input type="submit" value="Submit">

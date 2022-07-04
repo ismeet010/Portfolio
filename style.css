@@ -11,8 +11,11 @@ canvas{
 }
 
   /* Change the link color on hover */
+  a{
+    color: #b5b5be;
+    text-decoration: none;
+  }
   li a:hover {
-    background-color: #555;
     color: white;
   }
 /* content */
@@ -133,7 +136,7 @@ canvas{
     font-size: 15px;
     position: absolute;
     bottom: 10%;
-    right: 25px;
+    right: 20px;
     writing-mode: vertical-lr;
     color: white;
     animation: scroll 2s infinite;
@@ -141,12 +144,11 @@ canvas{
 
 #arrow{
     position: absolute;
-    bottom: 1.7%;
-    right: 27px;
+    bottom: 1.8%;
+    right: 25px;
     color: white;
     size: 10px;
 }
-
 
 @keyframes scroll {
     0%{
@@ -198,22 +200,23 @@ h2{
    font-size: 80px; 
    font-weight:600; 
 }
-p{
+#contact p {
     font-size: 20px;
+    width: 60%;
 }
 
 /* Form */
 form{
     width: 60%;
 }
-input, select {
+input, select, textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: rgb(65, 65, 65);
   }
   
   input[type=submit] {
@@ -241,11 +244,13 @@ input, select {
     color: #ccc;
   }
   .row{
-      width:48%;
-      display: inline-block;
+    width:49%;
   }
   input[type=email]{
-      margin-left: 40px;
+    float: right;
+  }
+  input[type=text]{
+    float: left;
   }
  
   
