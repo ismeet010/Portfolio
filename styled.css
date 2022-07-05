@@ -203,6 +203,31 @@ body {
   transition: 0.6s linear;
 }
 
+.socials{
+  position:absolute;
+  bottom: 10%;
+  font-size: 2rem;
+  list-style: none;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.socials .items{
+  margin-left: 2rem;
+  color: var(--grey-color);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.items:hover{
+  color: var(--white-color);
+  transition: 0.5s ease;
+}
+.items:hover::before {
+  opacity: 1;
+  visibility: unset;
+}
+
 
 
 .category-list {
@@ -369,21 +394,6 @@ body {
   margin-left: 1.4rem;
 }
 
-.tooltip {
-  position: absolute;
-  top: -2.1rem;
-  left: 6.4rem;
-  background-color: white;
-  color: var(--background-color);
-  border-radius: 0.4rem;
-  padding: 0.5rem 0.9rem;
-  font-size: 1.4rem;
-  transition: 0s;
-  opacity: 0;
-  display: none;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
 .side-bar.collapse .message:hover .tooltip,
 .features-item:hover .tooltip,
 .category-item:hover .tooltip,
@@ -398,44 +408,7 @@ body {
   width: 6.4rem;
 }
 
-.side-bar.collapse .tooltip {
-  display: block;
-}
 
-.side-bar.collapse .logo-name,
-.side-bar.collapse .category-header,
-.side-bar.collapse .chat-header,
-.side-bar.collapse .chat-new-btn-text,
-.side-bar.collapse .features-item-text,
-.side-bar.collapse .inbox-number,
-.side-bar.collapse .category-item-text,
-.side-bar.collapse .category-item-number,
-.side-bar.collapse .message-text,
-.side-bar.collapse .chat-item-name,
-.side-bar.collapse .chat-item-number,
-.side-bar.collapse .chat-item-status {
-  opacity: 0;
-  pointer-events: none;
-}
 
-.side-bar.collapse .message-text {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateX(0);
-}
-.side-bar.collapse .message-icon {
-  transform: translateX(0);
-}
-.side-bar.collapse .logo-name__button {
-  right: 0.5rem;
-}
 
-.side-bar.collapse .inbox-icon .status,
-.side-bar.collapse .chat-item-avatar-wrapper::before {
-  opacity: 1;
-}
 
-hr{
-  color: red;
-  background-color: pink;
-}
