@@ -10,6 +10,10 @@ canvas{
     overflow-y: scroll;
 }
 
+h1{
+  color: white;
+}
+
   /* Change the link color on hover */
   a{
     color: #b5b5be;
@@ -18,6 +22,41 @@ canvas{
   li a:hover {
     color: white;
   }
+
+  /* Bouncing Letters */
+.bounce{
+    animation-name: bounce;
+    color: rgb(103, 221, 242);
+}
+
+.bouncing-letters>span {
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    display: inline-block;
+}
+
+@keyframes bounce {
+    20%,
+    50%,
+    80%,
+    to {
+        transform: scale(1, 1);
+    }
+    40% {
+        transform: scale(1.75, 0.65);
+    }
+    45% {
+        transform: scale(1.75, 0.65);
+    }
+    70% {
+        transform: scale(1.25, 0.75);
+    }
+    90% {
+        transform: scale(1.15, 0.85);
+    }
+}
+
 /* content */
 #content{
     position: absolute;
@@ -36,6 +75,7 @@ canvas{
     text-shadow: -8px 0 0 rgb(103, 221, 242);
     color:rgb(255, 80, 30); 
     cursor: pointer;
+    display: inline;
 }
 
 /* typewriter animation */
@@ -162,23 +202,40 @@ canvas{
     }
 }
 
+#about{
+  position: absolute;
+  top: 110%;
+  left: 250px;
+  width:auto
+}
+
+#about p{
+  font-size: 20px;
+  width: 50%;
+  line-height: 25px;
+}
+
 /*skills...............*/
 #skills{
     position: absolute;
-    top: 110%;
+    top: 210%;
     left: 250px;
     color: white;
     background-color: transparent;
     width:auto;
 }
 
-#skills #leftalign{
-    width:50%;
+#skills p{
+  font-size: 20px;
+  width: 50%;
+  line-height: 25px;
 }
+
+
 /*.....Projects................ */
 #projects{
     position: absolute;
-    top: 210%;
+    top: 310%;
     left: 250px;
     color: white;
     background-color: transparent;
@@ -191,7 +248,7 @@ canvas{
     color: white;
     height:100vh;
     width: auto;
-    top:320%;
+    top:420%;
 }
 
 h2{
@@ -204,6 +261,8 @@ h2{
     font-size: 20px;
     width: 60%;
 }
+
+
 
 /* Form */
 form{
@@ -221,18 +280,33 @@ input, select, textarea {
   
   input[type=submit] {
     width: 30%;
-    color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: 2px solid rgb(103, 221, 242);
     border-radius: 4px;
     cursor: pointer;
     float:right;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 3px;
   }
   
-  input[type=submit]:hover {
-    background-color: rgb(103, 221, 242);
-    /* animation: */
+  
+
+  .button {
+    color: rgb(103, 221, 242);
+    border: 3px solid rgb(103, 221, 242);
+    background-image: -webkit-linear-gradient(30deg, rgb(103, 221, 242) 50%, transparent 50%);
+    background-image: linear-gradient(30deg, rgb(103, 221, 242) 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+  .button:hover {
+    background-position: 0%;
+    color:rgb(30, 29, 29) ;
   }
 
   textarea {
