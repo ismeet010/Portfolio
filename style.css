@@ -217,7 +217,7 @@ h1{
   position: absolute;
   top: 110%;
   left: 250px;
-  width:auto
+  width:auto;
 }
 
 #about p{
@@ -231,7 +231,7 @@ h1{
  .Sphere{
   float:right;
   position: absolute;
-  top: 10%;
+  top: 3%;
   right: 23%;
  }
  .tagcloud {
