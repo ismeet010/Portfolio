@@ -132,20 +132,6 @@ body {
   visibility: unset;
 }
 
-.inbox-number {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  background-color: #1e75ff;
-  padding: 0.5rem 0.9rem;
-  border-radius: 0.4rem;
-  color: var(--white-color);
-  opacity: 1;
-  transition: 0.6s linear;
-}
-
-
 .socials{
   position:absolute;
   bottom: 10%;

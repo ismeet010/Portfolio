@@ -171,11 +171,12 @@
         <p>I am interested in freelance/fulltime opportunities. However, if you have other request or question, don't hesitate to use the form.</p>
         <br>&emsp;&emsp;<span class="tags">&lt;/p&gt;</span><br><br><br>
         <span class="tags">&lt;form&gt;</span><br><br>
-        <form action="send" method="post" id="contact-form" enctype = "multipart/form-data">
-            <input type="text" id="name" class="row" name="name" placeholder="Name" required>
-            <input type="email" id="email" class="row" name="email" placeholder="Email"  required><br>
-            <input type="text" id="sub" name="sub" placeholder="Subject" required>
-            <textarea placeholder="Message"></textarea>
+        <form method="post" onsubmit="return(Validation())" id="contact-form" name="ContactForm">
+            <input type="text" id="name" class="row" name="Name" placeholder="Name">
+            <input id="email" class="row" name="EMail" placeholder="Email"><br>
+            <p id="demo"></p>
+            <input  id="sub" name="Subject" placeholder="Subject">
+            <textarea placeholder="Message" name="Message" id="msg"></textarea>
             <input class="button" type="submit" value="Send message!">
           </form><br>
         <span class="tags">&lt;/form&gt;</span><br>

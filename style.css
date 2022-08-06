@@ -114,6 +114,7 @@ h1{
 .tags{
     font-family: 'Caveat', cursive;
     color:rgb(171, 169, 169);
+    font-size: 20px;
 }
 
 #content h3{
@@ -396,6 +397,7 @@ form{
     width: 60%;
 }
 input, select, textarea {
+    color: #ccc;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -452,6 +454,11 @@ input, select, textarea {
   }
   input[type=text]{
     float: left;
+  }
+
+  .below{
+    border-bottom: 3px solid red;
+    color: pink;
   }
  
   
