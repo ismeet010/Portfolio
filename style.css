@@ -12,15 +12,9 @@
 *{
     font-family: 'Recursive', sans-serif;
 }
-canvas{
-    height:100vh;
-    width: 100vw;
-    background-color:#1d2322;
-    z-index: -5;
-    position:fixed;
-    overflow-y: scroll;
+body{
+  background: linear-gradient(90deg, rgb(42, 40, 40), #000);
 }
-
 h1{
   color: white;
 }
@@ -264,6 +258,46 @@ h1{
   font-size: 20px;
   width: 50%;
   line-height: 25px;
+}
+
+/* Animations..*/
+#rightalign{
+  position: absolute;
+  top: 20%;
+  right: 0px;
+  width:50%;
+  height:100%;
+  background: linear-gradient(#444 1.5px, #000 1.5px);
+  background-size: 100% 10px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+#rightalign:hover{
+  background: linear-gradient(45deg, #444 1.5px, #000 1.5px);
+  background-size: 10px 10px;
+}
+  
+#rightalign h1{
+  font-size:100px;
+  text-transform: uppercase;
+  background-image: linear-gradient(#444 1.5px, transparent 1.5px);
+  background-size: 100% 10px;
+  font-family: Arial;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color:transparent;
+  text-align:center;
+  transition: .1s;
+  margin-top: 10px;
+  transition: margin 1s;
+}
+  
+#rightalign h1:hover{
+  margin-top: -2000px;
+  transition: margin 35s linear ;
 }
 
 
